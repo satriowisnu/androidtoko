@@ -1,0 +1,649 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Datatable - srtdash</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="assets/images/icon/favicon.ico">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/metisMenu.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/slicknav.min.css">
+    <!-- amcharts css -->
+    <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css"
+        media="all" />
+    <!-- Start datatable css -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.18/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.bootstrap.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.jqueryui.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="assets/css/typography.css">
+    <link rel="stylesheet" href="assets/css/default-css.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- modernizr css -->
+    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <!-- preloader area start -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <!-- preloader area end -->
+    <!-- page container area start -->
+    <div class="page-container">
+        <!-- sidebar menu area start -->
+        <div class="sidebar-menu">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <a href="index.html"><img src="assets/images/icon/logo.png" alt="logo"></a>
+                </div>
+            </div>
+            <div class="main-menu">
+                <div class="menu-inner">
+                    <nav>
+                        <ul class="metismenu" id="menu">
+                            <li class="active">
+                                <a href="javascript:void(0)" aria-expanded="true"><i class="fa fa-table"></i>
+                                    <span>Tables</span></a>
+                                <ul class="collapse">
+                                    <li class="active"><a href="index.html">datatable</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- sidebar menu area end -->
+        <!-- main content area start -->
+        <div class="main-content">
+            <!-- header area start -->
+            <div class="header-area">
+                <div class="row align-items-center">
+                    <!-- nav and search button -->
+                    <div class="col-md-6 col-sm-8 clearfix">
+                        <div class="nav-btn pull-left">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="search-box pull-left">
+                            <form action="#">
+                                <input type="text" name="search" placeholder="Search..." required>
+                                <i class="ti-search"></i>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- profile info & task notification -->
+                    <div class="col-md-6 col-sm-4 clearfix">
+                        <ul class="notification-area pull-right">
+                            <li id="full-view"><i class="ti-fullscreen"></i></li>
+                            <li id="full-view-exit"><i class="ti-zoom-out"></i></li>
+                            <li class="dropdown">
+                                <i class="ti-bell dropdown-toggle" data-toggle="dropdown">
+                                    <span>2</span>
+                                </i>
+                                <div class="dropdown-menu bell-notify-box notify-box">
+                                    <span class="notify-title">You have 3 new notifications <a href="#">view
+                                            all</a></span>
+                                    <div class="nofity-list">
+                                        <a href="#" class="notify-item">
+                                            <div class="notify-thumb"><i class="ti-key btn-danger"></i></div>
+                                            <div class="notify-text">
+                                                <p>You have Changed Your Password</p>
+                                                <span>Just Now</span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="notify-item">
+                                            <div class="notify-thumb"><i class="ti-comments-smiley btn-info"></i></div>
+                                            <div class="notify-text">
+                                                <p>New Commetns On Post</p>
+                                                <span>30 Seconds ago</span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="notify-item">
+                                            <div class="notify-thumb"><i class="ti-key btn-primary"></i></div>
+                                            <div class="notify-text">
+                                                <p>Some special like you</p>
+                                                <span>Just Now</span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="notify-item">
+                                            <div class="notify-thumb"><i class="ti-comments-smiley btn-info"></i></div>
+                                            <div class="notify-text">
+                                                <p>New Commetns On Post</p>
+                                                <span>30 Seconds ago</span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="notify-item">
+                                            <div class="notify-thumb"><i class="ti-key btn-primary"></i></div>
+                                            <div class="notify-text">
+                                                <p>Some special like you</p>
+                                                <span>Just Now</span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="notify-item">
+                                            <div class="notify-thumb"><i class="ti-key btn-danger"></i></div>
+                                            <div class="notify-text">
+                                                <p>You have Changed Your Password</p>
+                                                <span>Just Now</span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="notify-item">
+                                            <div class="notify-thumb"><i class="ti-key btn-danger"></i></div>
+                                            <div class="notify-text">
+                                                <p>You have Changed Your Password</p>
+                                                <span>Just Now</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dropdown">
+                                <i class="fa fa-envelope-o dropdown-toggle" data-toggle="dropdown"><span>3</span></i>
+                                <div class="dropdown-menu notify-box nt-enveloper-box">
+                                    <span class="notify-title">You have 3 new notifications <a href="#">view
+                                            all</a></span>
+                                    <div class="nofity-list">
+                                        <a href="#" class="notify-item">
+                                            <div class="notify-thumb">
+                                                <img src="assets/images/author/author-img1.jpg" alt="image">
+                                            </div>
+                                            <div class="notify-text">
+                                                <p>Aglae Mayer</p>
+                                                <span class="msg">Hey I am waiting for you...</span>
+                                                <span>3:15 PM</span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="notify-item">
+                                            <div class="notify-thumb">
+                                                <img src="assets/images/author/author-img2.jpg" alt="image">
+                                            </div>
+                                            <div class="notify-text">
+                                                <p>Aglae Mayer</p>
+                                                <span class="msg">When you can connect with me...</span>
+                                                <span>3:15 PM</span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="notify-item">
+                                            <div class="notify-thumb">
+                                                <img src="assets/images/author/author-img3.jpg" alt="image">
+                                            </div>
+                                            <div class="notify-text">
+                                                <p>Aglae Mayer</p>
+                                                <span class="msg">I missed you so much...</span>
+                                                <span>3:15 PM</span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="notify-item">
+                                            <div class="notify-thumb">
+                                                <img src="assets/images/author/author-img4.jpg" alt="image">
+                                            </div>
+                                            <div class="notify-text">
+                                                <p>Aglae Mayer</p>
+                                                <span class="msg">Your product is completely Ready...</span>
+                                                <span>3:15 PM</span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="notify-item">
+                                            <div class="notify-thumb">
+                                                <img src="assets/images/author/author-img2.jpg" alt="image">
+                                            </div>
+                                            <div class="notify-text">
+                                                <p>Aglae Mayer</p>
+                                                <span class="msg">Hey I am waiting for you...</span>
+                                                <span>3:15 PM</span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="notify-item">
+                                            <div class="notify-thumb">
+                                                <img src="assets/images/author/author-img1.jpg" alt="image">
+                                            </div>
+                                            <div class="notify-text">
+                                                <p>Aglae Mayer</p>
+                                                <span class="msg">Hey I am waiting for you...</span>
+                                                <span>3:15 PM</span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="notify-item">
+                                            <div class="notify-thumb">
+                                                <img src="assets/images/author/author-img3.jpg" alt="image">
+                                            </div>
+                                            <div class="notify-text">
+                                                <p>Aglae Mayer</p>
+                                                <span class="msg">Hey I am waiting for you...</span>
+                                                <span>3:15 PM</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="settings-btn">
+                                <i class="ti-settings"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- header area end -->
+            <!-- page title area start -->
+            <div class="page-title-area">
+                <div class="row align-items-center">
+                    <div class="col-sm-6">
+                        <div class="breadcrumbs-area clearfix">
+                            <h4 class="page-title pull-left">Dashboard</h4>
+                            <ul class="breadcrumbs pull-left">
+                                <li><a href="index.html">Home</a></li>
+                                <li><span>Datatable</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 clearfix">
+
+                    </div>
+                </div>
+            </div>
+            <!-- page title area end -->
+            <div class="main-content-inner">
+                <div class="row">
+
+                    <!-- Primary table start -->
+                    <div class="col-12 mt-5">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="header-title">Data Table Toko</h4>
+                                <div class="btn-group" role="group">
+                                    <button type="button" class="btn btn-alt btn-sm btn-info" data-toggle="modal"
+                                        data-target="#tambahmodal">
+                                        <i class="fa fa-plus"></i> Tambah Data
+                                    </button>
+                                </div>
+                                <div class="data-tables datatable-primary">
+                                    <table id="tabelku" class="text-center">
+                                        <thead class="text-capitalize">
+                                            <tr>
+                                                <th>No</th>
+                                                <th>ID Produk</th>
+                                                <th>ID Kategori</th>
+                                                <th>Nama Produk</th>
+                                                <th>Harga Produk</th>
+                                                <th>Deskripsi Produk</th>
+                                                <th>Stok</th>
+                                                <th>Tgl Post</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="showdata">
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Primary table end -->
+                </div>
+            </div>
+        </div>
+
+        <!-- main content area end -->
+        <!-- footer area start-->
+        <footer>
+            <div class=" footer-area">
+                <p>© Copyright 2018. All right reserved. Template by <a href="https://colorlib.com/wp/">Colorlib</a>.
+                </p>
+            </div>
+        </footer>
+        <!-- footer area end-->
+    </div>
+    <!-- page container area end -->
+    <div id="tambahmodal" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h2 class="modal-title"><i class="fa fa-pencil"></i> Tambah Data</h2>
+                </div>
+                <div class="modal-body">
+                    <form action="" method="post" id="form-tambah" enctype="multipart/form-data"
+                        class="form-horizontal form-bordered" onsubmit="return false;">
+                        <fieldset>
+                            <legend> Masukan Data </legend>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="id_produk">ID Produk
+                                    :</label>
+                                <div class="col-md-9">
+                                    <input type="text" id="id" name="id" class="form-control" placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="id_produk">ID Kategori
+                                    :</label>
+                                <div class="col-md-9">
+                                    <input type="text" id="idk" name="idk" class="form-control" placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="id_produk">Nama Produk
+                                    :</label>
+                                <div class="col-md-9">
+                                    <input type="text" id="np" name="np" class="form-control" placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="id_produk">Harga
+                                    Produk
+                                    :</label>
+                                <div class="col-md-9">
+                                    <input type="text" id="hp" name="hp" class="form-control" placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="id_produk">Deskripsi
+                                    Produk :</label>
+                                <div class="col-md-9">
+                                    <input type="text" id="dp" name="dp" class="form-control" placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="id_produk">Stok
+                                    :</label>
+                                <div class="col-md-9">
+                                    <input type="text" id="stok" name="stok" class="form-control" placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="id_produk">Tgl Post
+                                    :</label>
+                                <div class="col-md-9">
+                                    <input type="text" id="tp" name="tp" class="form-control" placeholder="">
+                                </div>
+                            </div>
+                            <legend><small class="text-danger">Pastikan Data yang di tambahkan
+                                    Benar</small>
+                            </legend>
+                        </fieldset>
+                        <div class="form-group form-actions">
+                            <div class="col-xs-12 text-right">
+                                <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-sm btn-primary" id="btn-edit">Simpan</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="editmodal" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h2 class="modal-title"><i class="fa fa-pencil"></i> Edit Data</h2>
+                </div>
+                <div class="modal-body">
+                    <form action="" method="post" id="form-edit" enctype="multipart/form-data"
+                        class="form-horizontal form-bordered" onsubmit="return false;">
+                        <fieldset>
+                            <legend> Masukan Data </legend>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="id_produk">ID Produk
+                                    :</label>
+                                <div class="col-md-9">
+                                    <input type="text" id="ide" name="id" readonly class="form-control" placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="id_produk">ID Kategori
+                                    :</label>
+                                <div class="col-md-9">
+                                    <input type="text" id="idke" name="idk" class="form-control" placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="id_produk">Nama Produk
+                                    :</label>
+                                <div class="col-md-9">
+                                    <input type="text" id="npe" name="np" class="form-control" placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="id_produk">Harga
+                                    Produk
+                                    :</label>
+                                <div class="col-md-9">
+                                    <input type="text" id="hpe" name="hp" class="form-control" placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="id_produk">Deskripsi
+                                    Produk :</label>
+                                <div class="col-md-9">
+                                    <textarea type="text" id="dpe" name="dp" class="form-control"
+                                        placeholder=""></textarea>
+
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="id_produk">Stok
+                                    :</label>
+                                <div class="col-md-9">
+                                    <input type="text" id="stoke" name="stok" class="form-control" placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="id_produk">Tgl Post
+                                    :</label>
+                                <div class="col-md-9">
+                                    <input type="text" id="tpe" name="tp" class="form-control" placeholder="">
+                                </div>
+                            </div>
+                            <legend><small class="text-danger">Pastikan Data Sudah
+                                    Benar</small>
+                            </legend>
+                        </fieldset>
+                        <div class="form-group form-actions">
+                            <div class="col-xs-12 text-right">
+                                <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-sm btn-primary" id="btn-edit">Simpan</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jquery latest version -->
+    <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
+    <!-- bootstrap 4 js -->
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/metisMenu.min.js"></script>
+    <script src="assets/js/jquery.slimscroll.min.js"></script>
+    <script src="assets/js/jquery.slicknav.min.js"></script>
+
+    <!-- Start datatable js -->
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+    <script src="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.18/js/dataTables.bootstrap4.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js">
+    </script>
+    <script src="https://cdn.datatables.net/responsive/2.2.3/js/responsive.bootstrap.min.js">
+    </script>
+    <!-- others plugins -->
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script>
+        $(document).ready(function () {
+            tampiltabeldata();
+
+            function tampiltabeldata() {
+                $.ajax({
+                    url: "http://pkl.notaxcloth.com/server-fw/produk",
+                    type: "GET",
+                    dataType: "JSON",
+                    success: function (data) {
+                        console.log(data['data']);
+                        var no = 1;
+                        $.each(data['data'], function (i, field) {
+                            var id = field.id_produk;
+                            var idk = field.id_kategori;
+                            var nama = field.nama_produk;
+                            var harga = field.harga_produk;
+                            var deskripsi = field.deskripsi_produk;
+                            var stok = field.stok;
+                            var tgl = field.tgl_post;
+                            $("#showdata").append(`
+                            <tr>
+                                <td class="text-center">` + no++ + `</td>
+                                <td class="text-center">` + id + `</td>
+                                <td class="text-center">` + idk + `</td>
+                                <td class="text-center">` + nama + `</td>
+                                <td>` + harga + `</td>
+                                <td>` + deskripsi + `</td>
+                                <td>` + stok + `</td>
+                                <td class="text-center">` + tgl +
+                                `</td>
+                                <td class="text-center">
+                                    <button type="button" class="btn btn-warning item_edit" name="item_edit" title="Edit" data-toggle="modal" id="` +
+                                id +
+                                `" onclick=""><i class="fa fa-edit"></i></button>
+
+                                    <button type="button" class="btn btn-danger data_hapus"  title="Hapus" data-toggle="modal" id="` +
+                                id + `"><i class="fa fa-times"></i></button>
+                                </td>
+                            </tr> 
+                        `);
+                        });
+                        $('#tabelku').DataTable();
+                    }
+                });
+
+            }
+            $("#btn-tambah").click(function () {
+                var data = $("#form-tambah").serialize();
+                console.log(data);
+                $.ajax({
+                    url: "http://pkl.notaxcloth.com/server-fw/produk",
+                    type: "POST",
+                    data: $("#form-tambah").serialize(),
+                    dataType: "JSON",
+                    success: function (result) {
+                        if (result.status) {
+                            alert(
+                                "Sukses, Data berhasil ditambahkan"
+                            );
+                            $('#tambahmodal').modal('hide');
+                            window.location.href =
+                                "index.html";
+                        } else {
+                            alert("Error, Data Gagal ditambahkan");
+                        }
+                    },
+                    error: function (xhr, Status, err) {
+                        $("Data Kurang Lengkap : " + Status);
+                    }
+                });
+                return false;
+            });
+
+            $(document).on('click', '.item_edit', function () {
+                var id = $(this).attr('id');
+                console.log(id);
+                $('#editmodal').modal('show');
+                $.ajax({
+                    type: "GET",
+                    url: "http://pkl.notaxcloth.com/server-fw/produk",
+                    dataType: "JSON",
+                    data: {
+                        id: id
+                    },
+                    success: function (data) {
+                        console.log(data['data']);
+                        $.each(data['data'], function (i, field) {
+                            var id = field.id_produk;
+                            var idk = field.id_kategori;
+                            var nama = field.nama_produk;
+                            var harga = field.harga_produk;
+                            var deskripsi = field.deskripsi_produk;
+                            var stok = field.stok;
+                            var tgl = field.tgl_post;
+                            $('[id="ide"]').val(id);
+                            $('[id="idke"]').val(idk);
+                            $('[id="npe"]').val(nama);
+                            $('[id="hpe"]').val(harga);
+                            $('[id="dpe"]').val(deskripsi);
+                            $('[id="stoke"]').val(stok);
+                            $('[id="tpe"]').val(tgl);
+                        });
+
+                    }
+                });
+            });
+            $(document).on('click', '#btn-edit', function () {
+                var data = $("#form-edit").serialize();
+                console.log(data);
+                $.ajax({
+                    url: "http://pkl.notaxcloth.com/server-fw/produk",
+                    type: "PUT",
+                    data: $("#form-edit").serialize(),
+                    dataType: "JSON",
+                    success: function (result) {
+                        if (result.status) {
+                            alert("Sukses, Data berhasil dirubah");
+                            $('#edit').modal('hide');
+                            window.location.href =
+                                "index.html";
+                        } else {
+                            alert("Error, Data Gagal dirubah");
+                        }
+                    },
+                    error: function (xhr, Status, err) {
+                        $("Data Kurang Lengkap : " + Status);
+                    }
+                });
+                return false;
+            });
+            $(document).on('click', '.data_hapus', function () {
+                var id = $(this).attr('id');
+                console.log(id);
+                $.ajax({
+                    url: "http://pkl.notaxcloth.com/server-fw/produk",
+                    type: "DELETE",
+                    data: {
+                        id: id
+                    },
+                    dataType: "JSON",
+                    success: function (result) {
+                        if (result.status) {
+                            alert("Sukses, Data berhasil dihapus");
+                            window.location.href =
+                                "index.html";
+                        } else {
+                            alert("Error, Data Gagal dihapus");
+                        }
+                    },
+                    error: function (xhr, Status, err) {
+                        $("Data Kurang Lengkap : " + Status);
+                    }
+                });
+                return false;
+            });
+        });
+    </script>
+</body>
+
+</html>
